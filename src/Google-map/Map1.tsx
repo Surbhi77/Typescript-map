@@ -19,7 +19,7 @@ function Map1(): JSX.Element {
     const startLocation = startInputRef.current?.value;
     const endLocation = endInputRef.current?.value;
     console.log(startLocation)
-    console.log(endLocation)
+   
 
     if (!startLocation || !endLocation) {
       return;
@@ -49,9 +49,9 @@ function Map1(): JSX.Element {
    
   }
 
-  const onLoadCallback = useCallback((map: GoogleMap) => {
-    // mapRef.current = map;
-  }, []);
+  // const onLoadCallback = useCallback((map: GoogleMap) => {
+  
+  // }, []);
 
   return isLoaded ? (
     <div>
@@ -105,7 +105,7 @@ function Map1(): JSX.Element {
           mapTypeControl: false,
           fullscreenControl: false,
         }}
-        // onLoad={onLoadCallback}
+       
       >
         <Marker position={center} />
         {directions && <DirectionsRenderer directions={directions} />}
