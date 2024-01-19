@@ -18,7 +18,7 @@ function Map1(): JSX.Element {
   async function handleDirections() {
     const startLocation = startInputRef.current?.value;
     const endLocation = endInputRef.current?.value;
-    console.log(startLocation)
+    // console.log(startLocation)
    
 
     if (!startLocation || !endLocation) {
@@ -52,6 +52,7 @@ function Map1(): JSX.Element {
   const onLoadCallback = useCallback((map: GoogleMap) => {
   
   }, []);
+  console.log('onLoadCallback',onLoadCallback)
 
   return isLoaded ? (
     <div>
