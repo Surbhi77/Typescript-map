@@ -18,8 +18,8 @@ function Map1(): JSX.Element {
   async function handleDirections() {
     const startLocation = startInputRef.current?.value;
     const endLocation = endInputRef.current?.value;
-    // console.log(startLocation)
-   
+    console.log(startLocation)
+   console.log(endLocation)
 
     if (!startLocation || !endLocation) {
       return;
